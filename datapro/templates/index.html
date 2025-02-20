@@ -1,0 +1,9 @@
+{% if latest_question_list %}
+    <ul>
+    {% for dataPro in latest_question_list %}
+        <li>>{{ dataPro.DataProName }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
