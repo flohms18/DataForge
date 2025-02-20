@@ -5,6 +5,5 @@ from .models import DataProfession
 
 
 def index(request):
-    DataProList = DataProfession.objects
-    context = {"DataProList": DataProList}
-    return render(request, "datapro/index.html",context)
+    queryset = DataProfession.objects.all()    
+    return render(request, "datapro/index.html",{'queryset': queryset})
