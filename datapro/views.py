@@ -5,5 +5,5 @@ from .models import DataProfession
 
 
 def index(request):
-    queryset = DataProfession.objects.all()    
+    queryset = DataProfession.objects.all()  
     return render(request, "datapro/index.html",{'queryset': queryset})
