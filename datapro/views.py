@@ -1,8 +1,5 @@
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the datapro index.")
-
-def DataProDetail(request):
-    return HttpResponse("Hello, world. You're at the datapro page.")
+def detail(request, DataPro_id):
+    return HttpResponse("You're looking at question %s." % DataPro_id)
