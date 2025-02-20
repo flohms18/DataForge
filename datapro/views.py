@@ -1,5 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
+from .models import DataProfession
 
 
-def detail(request, DataPro_id):
-    return HttpResponse("You're looking at question %s." % DataPro_id)
+def index(request):
+    DataProList = DataProfession.objects
+    context = {"DataProList": DataProList}
+    return render(request, "datapro/index.html",context)
