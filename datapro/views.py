@@ -7,3 +7,6 @@ from .models import DataProfession
 def index(request):
     queryset = DataProfession.objects.all()  
     return render(request, "datapro/index.html",{'queryset': queryset})
+
+def governance(request):
+    return render(request, "datapro/governance.html")
