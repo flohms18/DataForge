@@ -1,1 +1,22 @@
-<h1>This is the governance page</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 bg-primary">
+        Hello There ! 
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+</div>
+</body>
+</html>
