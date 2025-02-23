@@ -1,4 +1,24 @@
-    <ul>
-    
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 bg-primary">
         <h1 class="logo">{{ queryset.0.tools.programming_languages.0 }}</h1>
-    </ul>
+
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+</div>
+</body>
+</html>
