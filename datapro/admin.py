@@ -2,6 +2,6 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import DataProfession
+from .models import DataJob
 
-admin.site.register(DataProfession)
+admin.site.register(DataJob)

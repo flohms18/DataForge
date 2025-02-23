@@ -1,11 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from .models import DataProfession
+from .models import DataJob
 
 
 def index(request):
-    queryset = DataProfession.objects.all()  
+    queryset = DataJob.objects.all()  
     return render(request, "datapro/index.html",{'queryset': queryset})
 
 def governance(request):
