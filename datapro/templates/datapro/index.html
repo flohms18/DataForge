@@ -3,21 +3,22 @@
 <head>
   <title>{% block title %}{% endblock %}</title>
   {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
   {% load static %}
-  
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-6 bg-primary logo">
-        Test
+    <div class="row">
+        <div class="col-6 logo bg-primary">
+            Hello
+        </div>
     </div>
-  </div>
+</div>
 
   {% block content %}
   {% endblock %}
-</div>
 </body>
 </html>
