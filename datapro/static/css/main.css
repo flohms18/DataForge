@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #d9d9d9;
+    color: #5562ea;
     font-weight: bold;
 }
 
@@ -26,12 +26,14 @@ body {
 }
 
 .hero-section {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #232d3f;
+
 }
 
 .hero-title {
@@ -44,4 +46,13 @@ body {
     color: #d9d9d9;
     font-family: 'Poppins',sans-serif;
     font-weight: bold;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.content-section {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
 }
