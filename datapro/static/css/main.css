@@ -98,5 +98,18 @@ body {
     opacity: 0.7;
 }
 .card button {
+    font-family: 'Poppins',sans-serif;
+    color: #f8f9fa;
     margin-top: 25px;
+    background-color: #5562ea;
+}
+
+.CardTitle {
+    font-family: 'Poppins',sans-serif;
+    color: #232d3f;
+}
+
+.subtext-card {
+    font-family: 'Poppins',sans-serif;
+    color: #232d3f;
 }
