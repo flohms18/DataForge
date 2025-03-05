@@ -10,29 +10,33 @@
 </head>
 <body>
 
-<header class="HeaderBanner">
-    <div class="container-fluid">
-        <h1 class="HeaderTitle">Data Analyst</h1>
-        </div>
-    </div>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light HeaderBanner w-100">
+            <div class="container-fluid">
+                <h2 class="brand-name">DATAVERSE</h2>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">DATA GOVERNANCE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">DATA CAREERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GLOSSARY</a></li>
 
-<main>
-
-    <section>
-        <div class="container-fluid HeroBanner">
-            <div class="row">
-                <div class="col-6 LeftHeroBanner"></div>
-                <div class="col-6 RightHeroBanner"></div>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+    </header>
+
+    <section class="hero-section bg-light w-100" style="background-color: #232d3f;">
+    <h1 class="display-1 hero-title">DATAVERSE</h1>
+        <p class="hero-lead">Discover &bull; Explore &bull; Analyse</p>
     </section>
 
-</main>
-
-<footer>
-
-</footer>
+<footer></footer>
 
   {% block content %}
   {% endblock %}
