@@ -104,10 +104,18 @@ body {
     background-color: #5562ea;
 }
 
-.CardTitle {
+.TitleCard {
     font-family: 'Poppins',sans-serif;
     color: #232d3f;
+    font-size: 25px;
 }
+
+.CardTitle {
+    color: #232d3f;
+    font-family: 'Poppins',sans-serif;
+
+}
+
 
 .subtext-card {
     font-family: 'Poppins',sans-serif;
