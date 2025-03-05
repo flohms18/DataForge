@@ -125,13 +125,14 @@ body {
 .quote-section {
     position: relative;
     width: 100%;
-    height: 75vh; /* Full height of viewport */
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/262/774/423/space-stars-nebula-tylercreatesworlds-wallpaper-preview.jpg');
+    height: 85vh; 
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/853/586/450/universe-abstract-cube-gradient-wallpaper-6920483dc13a7d2b3657880f4071d63d.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 25%;
 }
 
 .quote-content {
