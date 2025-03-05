@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
 }
 
 .HeaderBanner {
     font-family: 'Poppins',sans-serif;
-    background-color: #232d3f;
+    background-color: #f8f9fa;
 }
 
 .brand-name {
@@ -43,7 +43,7 @@ body {
 }
 
 .hero-lead {
-    color: #d9d9d9;
+    color: #f8f9fa;
     font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -61,4 +61,10 @@ body {
     align-items: center;
     text-align: center;
     background-color: #f8f9fa;
+}
+
+.dv-content {
+    font-family: 'Poppins',sans-serif;
+    color: #5562ea;
+    font-weight: bold;
 }
