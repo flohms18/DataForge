@@ -26,7 +26,7 @@ body {
 }
 
 .hero-section {
-    height: 75vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,9 +50,15 @@ body {
     margin-top: -10px;
 }
 
+
 .content-section {
+    font-family: 'Poppins',sans-serif;
     width: 100%;
-    padding: 60px 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #f8f9fa;
 }
