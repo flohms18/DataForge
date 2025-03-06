@@ -221,23 +221,28 @@ body {
 
 /* Footer Styling */
 .footer-section {
-    background-color: #1e1e1e;
+    background-color: #232d3f;
     color: #ffffff;
     padding: 40px 0;
     text-align: center;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 /* Title Styling */
 .footer-title {
     font-size: 1.8rem;
     font-weight: bold;
+    color: #5562EA;
 }
 
 /* Text Styling */
 .footer-text {
     font-size: 1rem;
     margin-top: 10px;
-    color: #ccc;
+    color: #f8f9fa;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 /* Footer Links */
@@ -246,18 +251,26 @@ body {
     padding: 0;
 }
 
+.footer-subtitle {
+    color: #5562EA;
+}
+
 .footer-links ul li {
     margin-bottom: 8px;
 }
 
 .footer-links ul li a {
-    color: #ffffff;
+    color: #f8f9fa;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 .footer-links ul li a:hover {
     color: #5562EA;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 /* LinkedIn Icon */
@@ -266,7 +279,7 @@ body {
 }
 
 .footer-social .social-icons a {
-    color: #ffffff;
+    color: #f8f9fa;
     font-size: 24px;
     margin: 0 10px;
     transition: 0.3s;
@@ -278,9 +291,11 @@ body {
 
 /* Contact Email */
 .footer-contact a {
-    color: #ffffff;
+    color: #f8f9fa;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 .footer-contact a:hover {
@@ -292,6 +307,8 @@ body {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #bbb;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 /* Responsive Layout */
