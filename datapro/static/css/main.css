@@ -167,9 +167,11 @@ body {
 }
 
 .articles-title {
-    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 30px;
+    font-family: 'Poppins',sans-serif;
+    color: #232d3f;
+
 }
 
 .articles-list {
@@ -186,12 +188,15 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
 }
 
 .article-title a {
     text-decoration: none;
     color: #5562EA;
     transition: color 0.3s ease;
+    font-family: 'Poppins',sans-serif;
+
 }
 
 .article-title a:hover {
@@ -209,7 +214,8 @@ body {
     padding: 6px 12px;
     font-size: 0.85rem;
     background-color: #f0f0f0;
-    color: #333;
+    color: #232d3f;
+    font-family: 'Poppins',sans-serif;
     border-radius: 20px;
 }
 
