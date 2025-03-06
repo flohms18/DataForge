@@ -9,3 +9,6 @@ def index(request):
 
 def governance(request):
     return render(request, "datapro/governance.html")
+
+def about(request):
+    return render(request,'datapro/about.html')
