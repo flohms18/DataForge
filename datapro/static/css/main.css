@@ -159,6 +159,70 @@ body {
 
 }
 
+ /* Main section styling */
+ .articles-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title styling */
+.articles-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Centered articles list */
+.articles-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual article */
+.article-item {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Article title styling */
+.article-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Article links */
+.article-title a {
+    text-decoration: none;
+    color: #5562EA;
+    transition: color 0.3s ease;
+}
+
+.article-title a:hover {
+    color: #3c4bc9;
+}
+
+/* Meta info (date) */
+.article-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Category badge */
+.article-category {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 20px;
+}
+
+
+
 /* Responsive adjustment */
 @media (max-width: 768px) {
     .quote-content {
@@ -167,5 +231,16 @@ body {
 
     .author {
         font-size: 1rem;
+    }
+
+    .articles-section {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .articles-title {
+        font-size: 2rem;
+    }
+    .article-title {
+        font-size: 1.2rem;
     }
 }
