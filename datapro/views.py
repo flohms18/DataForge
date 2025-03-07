@@ -8,3 +8,6 @@ def index(request):
 
 def about(request):
     return render(request,'datapro/about.html')
+
+def career(request):
+    return render(request,'datapro/career.html')
