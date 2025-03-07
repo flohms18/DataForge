@@ -12,3 +12,6 @@ def about(request):
 
 def index(request):
     return render(request,'datapro/index.html')
+
+def governance(request):
+    return render(request,'datapro/governance.html')

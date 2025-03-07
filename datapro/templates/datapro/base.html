@@ -23,7 +23,7 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">ABOUT</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'career' %}">DATA CAREERS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">DATA GOVERNANCE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'governance' %}">DATA GOVERNANCE</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">GLOSSARY</a></li>
                     </ul>
                 </div>
@@ -48,10 +48,10 @@
                 <div class="col-md-4 footer-links">
                     <h4 class="footer-subtitle fw-bold">Quick Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Data Governance</a></li>
-                        <li><a href="#">Data Careers</a></li>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'governance' %}">Data Governance</a></li>
+                        <li><a href="{% url 'career' %}">Data Careers</a></li>
                         <li><a href="#">Glossary</a></li>
 
                     </ul>
