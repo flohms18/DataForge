@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 from datapro.views import career_detail
+from datapro.views import article_detail
+
 
 urlpatterns = [
     path("", views.index, name="index"),
@@ -9,7 +11,7 @@ urlpatterns = [
     path("career", views.career, name="career"),
     path("governance", views.governance, name="governance"),
     path("career/<int:career_id>/", career_detail, name="career_detail"),
-    path("career/<int:article_id>/", career_detail, name="career_detail"),
+    path("article/<int:article_id>/", article_detail, name="article_detail"),
 
     
 ]

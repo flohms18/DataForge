@@ -8,10 +8,6 @@ def career(request):
     queryset = DataCareer.objects.all()  
     return render(request, "datapro/career.html",{'queryset': queryset})
 
-def article(request):
-    queryset = DataCareer.objects.all()  
-    return render(request, "datapro/career.html",{'queryset': queryset})
-
 def about(request):
     return render(request,'datapro/about.html')
 
@@ -21,7 +17,6 @@ def index(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, "datapro/index.html", {
-        'article': article,
         'obj': obj,
         'page_obj' : page_obj
     })
@@ -36,4 +31,10 @@ def career_detail(request, career_id):
     return render(request, "datapro/career_detail.html", {
         'career': career, 
         'obj': obj
+})
+
+def article_detail(request, article_id):
+    article = get_object_or_404(Article, id=article_id)    
+    return render(request, "datapro/article_detail.html", {
+        'article': article
 })

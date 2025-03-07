@@ -82,8 +82,8 @@
     <ul class="articles-list">
         {% for james in obj %}
         <li class="article-item">
-            <div class="article-meta">Published: {{ james.published_date }}</div>
-            <div class="article-title"><a href="#">{{ james.title }}</a></div>
+            <div class="article-meta">Published: {{ james.published_date }} </div>
+            <div class="article-title"><a href="{% url 'article_detail' james.id %}">{{ james.title }}</a></div>
             <span class="article-category">{{ james.category }}</span>
         </li>
         {% endfor %}
