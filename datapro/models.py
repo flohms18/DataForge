@@ -4,7 +4,7 @@ from django.db import models
 
 class DataCareer(models.Model):
     title = models.CharField(max_length=100, unique=True)
-    content = models.TextField(blank=True, null=True)
+    main_task = models.JSONField(default=list)
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)

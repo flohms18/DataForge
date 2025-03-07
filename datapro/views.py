@@ -18,7 +18,11 @@ def governance(request):
 
 def career_detail(request, career_id):
     career = get_object_or_404(DataCareer, id=career_id)    
-    return render(request, "datapro/career_detail.html", {"career": career})
+    obj = DataCareer.objects.all()
+    return render(request, "datapro/career_detail.html", {
+        'career': career, 
+        'obj': obj
+    })
 
 def article(request):
     return render(request,'datapro/article.html')
