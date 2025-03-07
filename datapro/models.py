@@ -2,10 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-
-
-class DataJob(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    tools = models.JSONField()
+class DataCareer(models.Model):
+    title = models.CharField(max_length=100, unique=True)
+    content = models.TextField(blank=True, null=True)
     
