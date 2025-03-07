@@ -1,9 +1,14 @@
 from django.shortcuts import render, get_object_or_404
+from django.core.paginator import Paginator
 
-from .models import DataCareer
+from .models import DataCareer, Article
 
 
 def career(request):
+    queryset = DataCareer.objects.all()  
+    return render(request, "datapro/career.html",{'queryset': queryset})
+
+def article(request):
     queryset = DataCareer.objects.all()  
     return render(request, "datapro/career.html",{'queryset': queryset})
 
@@ -11,7 +16,16 @@ def about(request):
     return render(request,'datapro/about.html')
 
 def index(request):
-    return render(request,'datapro/index.html')
+    obj = Article.objects.all()
+    paginator = Paginator(obj, 5)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, "datapro/index.html", {
+        'article': article,
+        'obj': obj,
+        'page_obj' : page_obj
+    })
+
 
 def governance(request):
     return render(request,'datapro/governance.html')
@@ -22,7 +36,4 @@ def career_detail(request, career_id):
     return render(request, "datapro/career_detail.html", {
         'career': career, 
         'obj': obj
-    })
-
-def article(request):
-    return render(request,'datapro/article.html')
+})

@@ -9,6 +9,7 @@ urlpatterns = [
     path("career", views.career, name="career"),
     path("governance", views.governance, name="governance"),
     path("career/<int:career_id>/", career_detail, name="career_detail"),
-    path("article", views.article, name="article")
+    path("career/<int:article_id>/", career_detail, name="career_detail"),
+
     
 ]
