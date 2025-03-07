@@ -80,11 +80,11 @@
 <section class="articles-section">
     <h2 class="articles-title display-4">Latest Articles</h2>
     <ul class="articles-list">
-        {% for james in obj %}
+        {% for article in obj %}
         <li class="article-item">
-            <div class="article-meta">Published: {{ james.published_date }} </div>
-            <div class="article-title"><a href="{% url 'article_detail' james.id %}">{{ james.title }}</a></div>
-            <span class="article-category">{{ james.category }}</span>
+            <div class="article-meta">Published: {{ article.published_date }} </div>
+            <div class="article-title"><a href="{% url 'article_detail' article.id %}">{{ article.title }}</a></div>
+            <span class="article-category">{{ article.category }}</span>
         </li>
         {% endfor %}
     </ul>
