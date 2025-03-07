@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import DataCareer
 
@@ -15,3 +15,7 @@ def index(request):
 
 def governance(request):
     return render(request,'datapro/governance.html')
+
+def career_detail(request, career_id):
+    career = get_object_or_404(DataCareer, id=career_id)    
+    return render(request, "datapro/career_detail.html", {"career": career})
