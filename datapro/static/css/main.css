@@ -500,3 +500,16 @@ h2 {
     }
 }
 
+.alphabet-nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #5562EA;
+    color: white;
+    border-radius: 5px;
+}
+.glossary-item {
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+

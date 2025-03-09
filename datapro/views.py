@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 
-from .models import DataCareer, Article
+from .models import DataCareer, Article, GlossaryTerm
 
 
 def career(request):
@@ -12,7 +12,16 @@ def about(request):
     return render(request,'datapro/about.html')
 
 def glossary(request):
-    return render(request,'datapro/glossary.html')
+    glossary_dict = {}
+    terms = GlossaryTerm.objects.all().order_by("term")
+    for term in terms:
+        FirstLetter = term.term[0].upper()
+        if FirstLetter not in glossary_dict:
+            glossary_dict[FirstLetter] = []
+        glossary_dict[FirstLetter].append(term)
+
+    return render(request, 'datapro/glossary.html', {
+        'glossary_dict': glossary_dict})
 
 def index(request):
     obj = Article.objects.all()
