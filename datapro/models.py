@@ -9,9 +9,15 @@ class DataCareer(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
+    def __str__(self):
+        return self.name
+
 class GlossaryTerm(models.Model):
     term = models.CharField(max_length=100, unique=True)
     definition = models.TextField()
+
+    def __str__(self):
+        return self.name
 
 class Article(models.Model):
     title = models.CharField(max_length=255)
