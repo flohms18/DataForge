@@ -503,9 +503,17 @@ h2 {
 .alphabet-nav a {
     text-decoration: none;
     padding: 10px 15px;
-    background: #5562EA;
-    color: white;
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #232d3f;
+    font-weight: 600;
     border-radius: 5px;
+}
+
+.alphabet-nav a:hover {
+    background-color: #5562EA;
+    color: #f8f9fa;
+
 }
 .glossary-item {
     padding: 15px;

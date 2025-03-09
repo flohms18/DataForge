@@ -25,7 +25,7 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">ABOUT</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'career' %}">DATA CAREERS</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'governance' %}">DATA GOVERNANCE</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">GLOSSARY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'glossary'%}">GLOSSARY</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                         <li><a href="{% url 'about' %}">About</a></li>
                         <li><a href="{% url 'governance' %}">Data Governance</a></li>
                         <li><a href="{% url 'career' %}">Data Careers</a></li>
-                        <li><a href="#">Glossary</a></li>
+                        <li><a href="{% url 'glossary'%}">Glossary</a></li>
 
                     </ul>
                 </div>
@@ -65,7 +65,6 @@
                             <i>{% bs_icon 'linkedin' color='#5562EA' size='1.5em'%}</i>                        
                         </a>
                     </div>
-                    <p class="footer-contact">Contact: <a href="mailto:info@yourbrand.com">info@yourbrand.com</a></p>
                 </div>
             </div>
     
