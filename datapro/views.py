@@ -13,7 +13,7 @@ def about(request):
 
 def index(request):
     obj = Article.objects.all()
-    paginator = Paginator(obj, 5)
+    paginator = Paginator(obj, 1)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, "datapro/index.html", {

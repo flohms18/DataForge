@@ -439,3 +439,64 @@ h2 {
   margin-bottom: 20px;
   color: #232d3f;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.step-links {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.step-links a,
+.step-links .current {
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.step-links a {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #232d3f;
+}
+
+.step-links a:hover {
+    background-color: #5562ea;
+    font-family: 'Poppins',sans-serif;
+    color: #f8f9fa;
+
+}
+
+.step-links .current {
+
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #5562ea;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+    .step-links {
+        gap: 4px;
+    }
+
+    .step-links a,
+    .step-links .current {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
