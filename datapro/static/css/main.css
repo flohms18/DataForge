@@ -213,6 +213,7 @@ body {
     margin-top: 10px;
     padding: 6px 12px;
     font-size: 0.85rem;
+    font-weight: 600;
     background-color: #f0f0f0;
     color: #232d3f;
     font-family: 'Poppins',sans-serif;
@@ -519,5 +520,12 @@ h2 {
     padding: 15px;
     background: #f4f4f4;
     border-radius: 8px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adjust spacing between items */
+    margin-bottom: 15px;
 }
 
