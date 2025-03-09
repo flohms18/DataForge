@@ -11,6 +11,9 @@ def career(request):
 def about(request):
     return render(request,'datapro/about.html')
 
+def glossary(request):
+    return render(request,'datapro/glossary.html')
+
 def index(request):
     obj = Article.objects.all()
     paginator = Paginator(obj, 1)
