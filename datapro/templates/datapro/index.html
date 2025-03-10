@@ -81,11 +81,19 @@
     <h2 class="articles-title display-4">Latest Articles</h2>
     <ul class="articles-list">
         {% for article in obj %}
+            {% if article.is_featured %}
         <li class="article-item">
             <div class="article-meta">Published: {{ article.published_date }} </div>
-            <div class="article-title"><a href="{% url 'article_detail' article.id %}">{{ article.title }}</a></div>
+            <div class="article-title"><a href="{% url 'article_detail' article.id %}">{{ article.title }} (Featured)</a></div>
             <span class="article-category">{{ article.category }}</span>
         </li>
+        {% else %}
+        <li class="article-item">
+            <div class="article-meta">Published: {{ article.published_date }} </div>
+            <div class="article-title"><a href="{% url 'article_detail' article.id %}">{{ article.title }} </a></div>
+            <span class="article-category">{{ article.category }}</span>
+        </li>
+        {% endif %}
         {% endfor %}
     </ul>
 

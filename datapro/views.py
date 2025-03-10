@@ -24,13 +24,13 @@ def glossary(request):
         'glossary_dict': glossary_dict})
 
 def index(request):
-    obj = Article.objects.all()
+    obj = Article.objects.all().order_by('-is_featured')
     paginator = Paginator(obj, 1)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, "datapro/index.html", {
         'obj': obj,
-        'page_obj' : page_obj
+        'page_obj' : page_obj,
     })
 
 

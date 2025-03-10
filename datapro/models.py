@@ -21,6 +21,7 @@ class Article(models.Model):
     title = models.CharField(max_length=255)
     tool = models.CharField(max_length=255,default="one")
     content = HTMLField()
+    is_featured = models.BooleanField(default=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="articles")
     published_date = models.DateTimeField(auto_now_add=True)
     
