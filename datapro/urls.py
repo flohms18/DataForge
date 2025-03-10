@@ -1,4 +1,5 @@
 from django.urls import path
+from django.urls import path, include
 
 from . import views
 from datapro.views import career_detail
@@ -13,6 +14,7 @@ urlpatterns = [
     path("governance", views.governance, name="governance"),
     path("career/<int:career_id>/", career_detail, name="career_detail"),
     path("article/<int:article_id>/", article_detail, name="article_detail"),
+    path("tinymce/", include("tinymce.urls")), 
 
     
 ]

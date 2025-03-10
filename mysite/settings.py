@@ -41,8 +41,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'datapro',
     'bootstrap5',
-    'django_bootstrap_icons'
+    'django_bootstrap_icons',
+    'tinymce'
 ]
+
+TINYMCE_DEFAULT_CONFIG = {
+    "height": 400,
+    "width": "100%",
+    "menubar": "file edit view insert format tools table help",
+    "plugins": "advlist autolink lists link image charmap preview anchor \
+                searchreplace visualblocks code fullscreen \
+                insertdatetime media table paste code help wordcount",
+    "toolbar": "undo redo | bold italic underline | fontsizeselect | alignleft aligncenter alignright alignjustify | "
+               "bullist numlist outdent indent | link image media | code",
+    "content_style": "body { font-family:Arial,sans-serif; font-size:14px }",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

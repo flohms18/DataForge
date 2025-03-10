@@ -13,10 +13,7 @@
             <span class="article-category fst-italic">{{ article.tool }}</span>
         </div>
 
-        <p class="about-text mt-2">{{ article.content|safe }}</p>
-
-    
-        
+        <div class="about-text mt-2">{{ article.content|safe }}</p>    
     </div>
     <div class="text-center">
         <a href="{% url 'index'%}" class="btn btn-about">Learn More</a>
