@@ -12,7 +12,6 @@ django-appconf==1.1.0
 django-bootstrap-icons==0.9.0
 django-bootstrap-v5==1.0.11
 django-bootstrap5==24.3
-django-ckeditor==6.7.2
 django-compressor==4.5.1
 django-google-fonts==0.0.3
 django-js-asset==3.1.2
